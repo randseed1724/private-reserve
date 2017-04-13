@@ -25,7 +25,7 @@ a {
     color: #54cc9b !important;
 }
 
-/* 
+/*
 Loading section
 */
 .se-pre-con {
@@ -149,21 +149,57 @@ countdown timer section
 .social-media-wrapper a:last-child {
   margin-right: 0px;
 }
+.bton-enter {
+    color: #fff;
+    background-color: #d96719;
+    border-color: #d96719;
+    text-transform: uppercase;
+    font-size: 24px;
+    box-shadow: 0px 2px 44px #000;
+    width: 40%;
+}
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+#myCheck {
+    width: 5%;
+    height: 15px;
+}
 
-/*
-Footer and copyright section
-*/
+.bton-enter:hover, .bton-enter:visited {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+}
+
+
+.mTop {
+    margin-top: 8%;
+}
+
+#space {
+    width: 38%;
+    margin: 4% auto;
+}
 .copyright {
   margin: 30px 0px 20px 0px;
   color: #ffffff;
 }
-
+.centering {
+  text-align: center;
+}
+#checkAge {
+    font-size: 22px;
+    margin: 1em 0em;
+}
+#please {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
 .logo-reserve {
-    position: relative;
-    left: 25%;
-    right: 25%;
-    width: 50%;
-    padding: 60px;
+    width: 30%;
 }
 .copyright {
     margin: 90px 0px 20px 0px;
@@ -192,22 +228,12 @@ width: 234px !important;
 .img-responsive.center-block {
     width: 60%;
 }
-.logo-reserve {
-    width: 60% !important;
-    left: 20%;
-    right: 30%;
-}
+
 }
 
 @media only screen and (min-width: 0px) and (max-width: 599px)  {
 .img-responsive.center-block {
     width: 80%;
-}
-.logo-reserve {
-    width: 60% !important;
-    left: 20%;
-    right: 30%;
-    padding: 0px;
 }
 .text-center.copyright {
     font-size: large;

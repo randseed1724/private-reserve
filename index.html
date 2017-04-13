@@ -33,7 +33,7 @@
     <!-- fontawesome -->
     <script src="https://use.fontawesome.com/3db7fc1628.js"></script>
 
-    
+
     <!-- google font -->
     <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
 
@@ -47,31 +47,45 @@
     <![endif]-->
   </head>
   <body>
-    <div class="se-pre-con"></div>
-    <div class="container">
+    <div class="container mTop">
+
       <div class="row">
         <div class="col-md-12">
-          <div class="header-logo-wrapper">
+          <div class="centering">
             <img class="logo-reserve" src="images/private_reserve_logo.png" alt="private-reserve" title="Private Reserve is coming soon!" class="img-responsive center-block" />
+<hr id ="space" />
           </div>
         </div>
       </div>
 
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-4 col-md-offset-4 centering">
         <div class="coming-soon-img">
-          <img src="images/coming-soon.png" alt="" title="Coming Soon" class="img-responsive center-block" />
+          <p id="please">
+            Please verify your age
+          </p>
         </div>
-      </div>
-    </div>
+<p id="checkAge">
+  <input type="checkbox" id="myCheck" value="I am at least 18 years old"> I am at least 18 years old
+</p>
+    <button class="btn bton-enter" onclick="check()">Enter</button>
 
-    <div class="row">
-      <div class="col-md-12">
-        <div class="text-center copyright">For more information, <a href="mailto:info@privatereserve.org?subject=Contact&amp;body=Say something...">email us</a>.</div> 
-      </div>
-    </div>
-    
-    </div>
+    <script>
+    function check() {
+      if (document.getElementById("myCheck").checked === true) {
+        window.location.replace("http://privatereserve.org");
+      } else {
+        alert("You must be at least 18 years old to enter to the website");
+      }
+    }
+    </script>
+  </div>
+</div>
+
+
+</div>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -81,7 +95,7 @@
     <script type="text/javascript" src="js/jquery.fittext.js"></script>
 
     <!-- jquery countdown -->
-    <script type="text/javascript" src="js/jquery.plugin.js"></script> 
+    <script type="text/javascript" src="js/jquery.plugin.js"></script>
     <script type="text/javascript" src="js/jquery.countdown.js"></script>
 
     <!--placeholder -->
